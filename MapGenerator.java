@@ -37,12 +37,14 @@ public class MapGenerator
                     g.setStroke(new BasicStroke(3));
                     g.setColor(Color.black);
                     g.drawRect(j * brickWidth + 80, i * brickHeight + 50, brickWidth, brickHeight);
-                    //testdocker
                     
                 }
             }
         }
     }
 
-    
+    public void setBrickValue(int value, int row, int col)
+    {
+        map[row][col] = value;
+    }
 }
